@@ -11,18 +11,23 @@
   </head>
   <body>
     <header>
-      <img src="images/logo.jpg" alt="Logo of the page." />
-      <nav class="header--nav-bar">
-        <ul>
-          <li class="head-nav--links"><a href="index.html">Home</a></li>
-          <li class="head-nav--links">
-            <a href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="head-nav--links"><a href="blog.html">Blog</a></li>
-          <li class="head-nav--links"><a href="contact.html">Contact</a></li>
-          <li class="head-nav--links"><a href="about.html">About</a></li>
-        </ul>
-      </nav>
+      <div class="header--part">
+        <img src="images/logo.jpg" alt="Logo of the page." />
+        <nav class="header--nav-bar">
+          <ul>
+            <li class="head-nav--links"><a href="index.html">Home</a></li>
+            <li class="head-nav--links">
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="head-nav--links"><a href="blog.html">Blog</a></li>
+            <li class="head-nav--links"><a href="contact.html">Contact</a></li>
+            <li class="head-nav--links"><a href="about.html">About</a></li>
+          </ul>
+          <div class="menu-button">
+            <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff"></i>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <article class="recent-blog">
@@ -34,9 +39,11 @@
           Nemo!
         </h3>
       </article>
-      <section>
-        <button class="sortBy-button">Sort By:</button>
-        <h2>Blogs</h2>
+      <section class="blogs-list">
+        <div class="btn">
+          <button class="sortBy-button">Sort By:</button>
+          <h2>Blogs</h2>
+        </div>
         <article class="blogs">
           <img
             src="./images/reformation.jpg"
@@ -70,64 +77,66 @@
             similique error, qui fuga.
           </p>
         </article>
-        <article class="blogs">
-          <img
-            src="./images/reformation.jpg"
-            alt="Representation of the first blog"
-          />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            deserunt sed quisquam nam sequi quibusdam consequuntur ut culpa!
-            Reiciendis deserunt provident aliquid corporis nulla quidem magnam
-            similique error, qui fuga.
-          </p>
-        </article>
-        <article class="blogs">
-          <img
-            src="./images/chencha-1.jpg"
-            alt="Representation of the first blog"
-          />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-            deserunt sed quisquam nam sequi quibusdam consequuntur ut culpa!
-            Reiciendis deserunt provident aliquid corporis nulla quidem magnam
-            similique error, qui fuga.
-          </p>
-        </article>
+        <div class="hidden-blogs">
+          <article class="blogs">
+            <img
+              src="./images/reformation.jpg"
+              alt="Representation of the first blog"
+            />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+              deserunt sed quisquam nam sequi quibusdam consequuntur ut culpa!
+              Reiciendis deserunt provident aliquid corporis nulla quidem magnam
+              similique error, qui fuga.
+            </p>
+          </article>
+          <article class="blogs">
+            <img
+              src="./images/chencha-1.jpg"
+              alt="Representation of the first blog"
+            />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+              deserunt sed quisquam nam sequi quibusdam consequuntur ut culpa!
+              Reiciendis deserunt provident aliquid corporis nulla quidem magnam
+              similique error, qui fuga.
+            </p>
+          </article>
+        </div>
         <button>Read more...</button>
       </section>
     </main>
     <footer>
-      <section class="footer--social">
-        <article>
+      <section class="f-el footer--social">
+        <h3>Social media links</h3>
+        <section>
           <i class="fa-brands fa-facebook" style="color: #145ddb"></i>
           <a href="">Betsegaw on Facebook</a>
-        </article>
-        <article>
+        </section>
+        <section>
           <i class="fa-brands fa-telegram" style="color: #188656"></i>
           <a href="">@BM4uz</a>
-        </article>
-        <article>
+        </section>
+        <section>
           <i class="fa-brands fa-linkedin" style="color: #1d60d3"></i>
           <a href="">Betsegaw on LinkedIn</a>
-        </article>
-        <article>
+        </section>
+        <section>
           <i class="fa-brands fa-github" style="color: #511f33"></i>
           <a href="">Vist projects of Betsegaw in github</a>
-        </article>
+        </section>
       </section>
-      <section class="footer--about">
+      <section class="f-el footer--about">
+        <h3>About me:</h3>
         <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
         <a href="portfolio.html">Projects by Betsegaw</a>
         <a href="contact">Contact him in...</a>
       </section>
-      <section>
+      <section class="f-el footer-message">
         <h2>Leave your messages in the following</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          veritatis quia iste magni rem, ratione necessitatibus, velit animi
-          similique accusantium qui error voluptates rerum nobis voluptas dolore
-          atque nisi blanditiis.
+          veritatis quia iste magni rem,
         </p>
         <a href="mailto:betseeegaw@gmail.com">Email me...</a>
       </section>
