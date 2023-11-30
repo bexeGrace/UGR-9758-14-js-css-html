@@ -1,0 +1,317 @@
+/** This is css file **/
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    margin-right: auto;
+    flex-direction: column;
+    background-image: url("./images/background-best.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.header--part img{
+    height: 8vh;
+    width: 25vw;
+    font-weight: bold;
+}
+
+.header--nav-bar ul{
+    display: none;
+}
+
+.header--part {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(5, 37, 5);
+}
+
+.menu-button {
+    width: 4vw;
+    height: 4vw;
+    align-items: last center;
+    margin: 1vw 7vw 1vw 0;
+}
+.fa-2xl {
+    font-size: 3em;
+    vertical-align: -.75em;
+    margin-right: 10vw;
+}
+.avatar-image {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+}
+.avatar-image img{
+    width: 50vw;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.avatar-image h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.avatar-image p{
+    text-align: center;
+}
+
+.parents {
+    display: flex;
+    gap: 1vw;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.parents img{
+    width: 25vw;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+}
+
+.about--main{
+    display: flex;
+    flex-direction: column;
+}
+
+.about--cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+    justify-content: space-around;
+}
+
+.card{
+    flex: 0 1 calc(25% - 1em);
+    box-shadow: 1px 1px 5px rgba(5, 37, 5, 0.5);
+    width: 60vw;
+    background-color: antiquewhite;
+}
+
+.card img {
+    width: 43vw;
+    height: 25vw;
+}
+
+.card h2{
+    display: none;
+}
+
+.card p{
+    padding: 3vw;
+    padding-top: 0;
+}
+
+.about--best-projects {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+
+.best-projects--video {
+    display: flex;
+    gap: 2vw;
+    overflow: scroll;
+}
+.best-projects--video::-webkit-scrollbar {
+    display: none;
+}
+
+.best-projects--video video {
+    width: 60vw;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    color: white;
+    background-color: rgba(22, 26, 22, 0.5);
+    text-align: center;
+}
+
+.f-el h2{
+    font-size: 1rem;
+    color: black;
+}
+
+.recent-blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-blog img {
+    width: 60vw;
+    height: 60vw;
+    border-radius: 1vw;
+    margin: auto;
+    margin-top: 2vw;
+}
+
+.recent-blog h3{
+    text-align: center;
+    font-weight: 300;
+}
+
+.blogs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.hidden-blogs {
+    display: none;
+}
+
+.btn h2 {
+    text-align: center;
+}
+
+.blogs {
+    display: flex;
+    gap: 2vw;
+    box-shadow: 2px 2px 5px rgba(22, 26, 22, 0.5);
+}
+
+.blogs img {
+    width: 50vw;
+}
+
+.con-head {
+    background-color: antiquewhite;
+    background-image: none;
+}
+
+.con {
+    color: black;
+}
+
+.con-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.con-main--contacts h2{
+    text-align: center;
+}
+
+.con-main--contacts article{
+    display: flex;
+    gap: 2vw;
+}
+
+.con-main--contacts article img {
+    border-radius: 20%;
+    width: 30vw;
+}
+
+.con-main--contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.con-main--contacts a {
+    text-decoration: none;
+    color: black;
+    font-size: 5vw;
+    margin: auto;
+    background-color:blanchedalmond;
+    padding: 2vw;
+    border-radius: 20%;
+}
+
+.main--about {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.hm-card {
+    box-shadow: 1px 1px 5px rgba(5, 37, 5, 0.5);
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    gap: 2vw;
+    justify-self: center;
+}
+
+.hm-card img {
+    width: 60vw;
+    height: 50vw;
+}
+
+.home--projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.main--projects{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    margin: 3vw 2vw;
+}
+
+.best-projects--photo {
+    display: flex;
+    overflow: scroll;
+}
+
+.best-projects--photo::-webkit-scrollbar {
+    display: none;
+}
+
+.best-projects--photo img {
+    width: 90vw;
+}
+
+.ptf-card {
+    box-shadow: 1px 1px 5px rgba(5, 37, 5, 0.5);
+    width: 90vw;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    justify-self: center;
+}
+
+.ptf-btn {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    text-align: center;
+    /* margin: auto; */
+    width: 40%;
+}
+
+.ptf-btn button {
+    box-shadow: 1px 1px 5px rgba(22, 26, 22, 0.5);
+    background-color: orange;
+}
+
+.ptf-card-nw {
+    display: flex;
+}
+
+.ptf-card h2 {
+    text-align: center;
+}
+
+.ptf-card img {
+    margin: 0;
+    width: 40vw;
+}
+
+.ptf-lef {
+    width: 50%;
+}
