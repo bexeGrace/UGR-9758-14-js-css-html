@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/88465c6539.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style-flex.css" />
+    <link rel="stylesheet" href="css/style-resposive.css" />
   </head>
   <body>
     <header>
@@ -42,7 +42,17 @@
       </article>
       <section class="blogs-list">
         <div class="btn">
-          <button class="sortBy-button">Sort By:</button>
+          <button onclick="showList()" class="sortBy-button" id="btn">
+            Sort By:
+          </button>
+          <ul id="dropdown-sort">
+            <li>Time posted Ascending</li>
+            <li>Time posted Descending</li>
+            <li>Alphabet Ascending</li>
+            <li>Alphabet Descending</li>
+            <li>Date Modified</li>
+            <li>Content</li>
+          </ul>
           <h2>Blogs</h2>
         </div>
         <div class="blog-list-main">
@@ -135,5 +145,7 @@
         <a href="mailto:betseeegaw@gmail.com">Email me...</a>
       </section>
     </footer>
+
+    <script src="JS/javascript.js"></script>
   </body>
 </html>
